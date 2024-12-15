@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ввод начальной даты и времени -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите дату начала работ" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите время начала работ" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <!-- ввод конечной даты и времени -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите дату начала работ" />
+
+        <DatePicker
+            android:id="@+id/datePicker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите время начала работ" />
+
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+
+        <!-- ввод общего времени работы -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите общее время работы" />
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="чч:мм"
+            android:inputType="date" />
+
+        <!-- ввод типа и вида обслуживания -->
+        <Spinner
+            android:id="@+id/mySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/TYPE" />
+        <Spinner
+            android:id="@+id/mySpinner1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/KIND" />
+
+        <!-- ввод инфо по СДО -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите наработку СДО на дату" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="М/ч" />
+
+        <EditText
+            android:id="@+id/MCH"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уд/ч Л" />
+        <EditText
+            android:id="@+id/UHL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уд/ч Пр" />
+        <EditText
+            android:id="@+id/UHR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Эл/ч Л" />
+        <EditText
+            android:id="@+id/EHL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Эл/ч Пр" />
+        <EditText
+            android:id="@+id/EHR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+        <!-- Инфо об СДО -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Модель СДО" />
+        <EditText
+            android:id="@+id/MODEL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Хоз номер СДО" />
+        <EditText
+            android:id="@+id/INDEX_SDO"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Должность исполнителя" />
+        <EditText
+            android:id="@+id/POST"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ФИО исполнителя" />
+        <EditText
+            android:id="@+id/EXECUTOR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Введите текст" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Замечания оператора/механика (неисправность)" />
+        <EditText
+            android:id="@+id/TextEdit1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание работ (операций):" />
+        <EditText
+            android:id="@+id/TextEdit2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Установленный МПЗ" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Наименование/Кол-во" />
+        <EditText
+            android:id="@+id/TextEdit3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дополнительно выявленые дефекты и неисправности." />
+        <EditText
+            android:id="@+id/TextEdit4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рекомендации по устранению выявленных дефектов" />
+        <EditText
+            android:id="@+id/TextEdit5"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Потребность в МПЗ" />
+        <EditText
+            android:id="@+id/TextEdit6"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Введите текст" />
+        <Button
+            android:id="@+id/makeReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить отчет"
+            android:onClick="makeReport" />
+        <Button
+            android:id="@+id/sendReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить сохраненные отчеты на сервер"
+            android:onClick="sendReport" />
+
+
+
+
+        <!-- Добавь остальные 16 EditText по аналогии -->
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

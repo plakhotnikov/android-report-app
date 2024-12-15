@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">try2</string>
+    <string-array name="KIND">
+        <item>Плановый ремонт</item>
+        <item>Внеплановый ремонт</item>
+    </string-array>
+    <string-array name="TYPE">
+        <item>ТО</item>
+        <item>ТР</item>
+    </string-array>
+
+</resources>
+
+
